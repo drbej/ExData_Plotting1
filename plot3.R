@@ -49,6 +49,6 @@ lines(HHPCdata$Time, HHPCdata$Sub_metering_3, col = "blue")
 legend("topright",
        col = c("black", "red", "blue"),
        legend = colnames(HHPCdata[7:9]),
-       lty = c(1,1,1), lwd = 2)
-dev.copy(png, file = "plot3.png")  
+       lty = 1)
+dev.copy(png, file = "plot3.png", width = 480, height = 480)  
 dev.off()
